@@ -1,0 +1,8 @@
+{
+  "name": "sorts",
+  "version": "1.0.0",
+  "description": "sort algorythems",
+  "main": "index.js",
+  "author": "LironBlum",
+  "license": "ISC"
+}
