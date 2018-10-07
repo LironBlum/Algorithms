@@ -1,0 +1,11 @@
+{
+  "name": "graphs",
+  "version": "1.0.0",
+  "description": "shortest path algorithm",
+  "main": "dijkstra.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "lironBlum",
+  "license": "ISC"
+}
