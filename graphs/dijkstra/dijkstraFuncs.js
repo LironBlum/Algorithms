@@ -8,6 +8,8 @@ class Dijkstra {
       this.start = start
       this.finish = finish
       this.unVIsited = {}
+      this.path = []
+      this.pathLength = 0
     }
     
     algorithm(){
@@ -38,13 +40,22 @@ class Dijkstra {
         }
     }
     
-    findPath() {
-     
+    execute() {
         this.algorithm()
+        this.pathLength = this.graph[this.finish].dist
+        this.getRoad(this.finish)
 
-        //TODO recursively return path and path length
-        console.log('******************')
-        console.log(this.graph)
+        console.log('path:',this.path)
+        console.log('length:', this.pathLength)
+    }
+
+    getRoad(vertex){
+        if(vertex === null){
+            return
+        }
+        let cur = this.graph[vertex]
+        this.path.push(vertex)
+        this.getRoad(cur.parent)
     }
 }
 
